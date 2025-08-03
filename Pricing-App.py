@@ -30,8 +30,8 @@ st.markdown("Adjust the features below to estimate the predicted price:")
 
 # --- Input sliders ---
 area = st.slider("Total Area (sqft)", min_value=200, max_value=200000, value=3000, step=100)
-rooms = st.slider("Number of Rooms", min_value=1, max_value=10, value=4)
-floors = st.slider("Number of Floors", min_value=1, max_value=5, value=1)
+rooms = st.slider("Number of Rooms", min_value=1, max_value=100, value=4)
+floors = st.slider("Number of Floors", min_value=1, max_value=100, value=1)
 prev_owners = st.slider("Number of Previous Owners", 0, 5, 1)
 property_age = st.slider("Property Age (Years)", 0, 100, 5)
 luxury_features = st.slider("Luxury Features Count", 0, 10, 2)

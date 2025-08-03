@@ -34,8 +34,8 @@ rooms = st.slider("Number of Rooms", min_value=1, max_value=100, value=4)
 floors = st.slider("Number of Floors", min_value=1, max_value=100, value=1)
 prev_owners = st.slider("Number of Previous Owners", 0, 5, 1)
 property_age = st.slider("Property Age (Years)", 0, 100, 5)
-luxury_features = st.slider("Luxury Features Count", 0, 10, 2)
-city_code = st.selectbox("City Code", [100, 200, 300, 400])  # Adjust based on actual values
+luxury_features = st.slider("Luxury Features Count", 0, 4, 1)
+
 
 # Binary checkboxes
 has_yard = st.checkbox("Has Yard")

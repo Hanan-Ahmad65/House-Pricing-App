@@ -27,6 +27,7 @@ scaler = joblib.load("scaler.pkl")
 st.title("🏡 Housing Price Prediction App")
 
 st.markdown("Adjust the features below to estimate the predicted price:")
+city_code = 1001
 
 # --- Input sliders ---
 area = st.slider("Total Area (sqft)", min_value=200, max_value=200000, value=3000, step=100)
@@ -35,7 +36,7 @@ floors = st.slider("Number of Floors", min_value=1, max_value=100, value=1)
 prev_owners = st.slider("Number of Previous Owners", 0, 5, 1)
 property_age = st.slider("Property Age (Years)", 0, 100, 5)
 luxury_features = st.slider("Luxury Features Count", 0, 4, 1)
-
+city_code= city_code
 
 # Binary checkboxes
 has_yard = st.checkbox("Has Yard")

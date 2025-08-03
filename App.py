@@ -41,6 +41,9 @@ for i in range(2, 11):
 if st.button("Predict Price"):
     try:
         input_df = pd.DataFrame([input_data])[feature_names]
+        st.write("Input going into model:")
+        st.dataframe(input_df)
+
         prediction = model.predict(input_df)[0]
         st.success(f"💰 Predicted House Price: ${prediction:,.2f}")
     except Exception as e:
